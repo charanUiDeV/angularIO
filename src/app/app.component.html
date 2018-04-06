@@ -1,0 +1,8 @@
+<div style="background-color:aqua">
+  <h1>parent</h1>
+  <h2>value from child :{{showValue}}</h2>
+  <input type="text" [(ngModel)]="showValue">
+  <button (click) ="Reset()">Reset</button>
+  <app-child-component [value]="showValue" (Increment) ="IncrementedValue($event)" (Decrement)="DecrementedValue($event)"></app-child-component>
+
+</div>
